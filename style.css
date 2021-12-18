@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  /* cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important; */
+}
+
+body, html {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #ededed;
+  letter-spacing: -0.03em;
+  font-family: "Poppins", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ededed;
+}
+
+.has-section-divider {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.section-divider {
+  display: block;
+  position: relative;
+  height: auto;
+}
+
+main.slideshow {
+  height: 95vh;
+  background: linear-gradient(0deg, rgba(154, 31, 103, 0.8), rgba(154, 31, 103, 0.8)), url(assets/pexels1.jpg);
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  overflow: hidden;
+}
+main.slideshow main.slideshow:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  opacity: 0.5;
+  z-index: 10;
+}
+main.slideshow #has-subheader {
+  position: relative;
+  border-bottom: 1px solid #ededed;
+  padding: 12px 0;
+  overflow-y: hidden;
+  display: block;
+}
+main.slideshow #has-subheader .links i, main.slideshow #has-subheader .links a {
+  padding-right: 15px;
+  color: #ededed;
+  font-size: 10px;
+  text-decoration: none;
+}
+main.slideshow #has-subheader .links a:last-child {
+  padding-right: 0;
+}
+main.slideshow #has-subheader .icons a {
+  padding: 20px;
+  border-left: 1px solid #ededed;
+  font-size: 10px;
+  color: #ededed;
+  transition: color 0.5s;
+}
+main.slideshow #has-subheader .icons a:last-child {
+  border-right: 1px solid #ededed;
+}
+main.slideshow #has-subheader .icons a:hover {
+  color: #ffcc00;
+}
+main.slideshow nav a {
+  font-size: 10px;
+  color: #ededed;
+  position: relative;
+  display: inline-block;
+  transition: color 1s;
+}
+main.slideshow nav a:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  transform: scaleY(0);
+  height: 100%;
+  bottom: 0;
+  left: -5px;
+  background-color: #ffcc00;
+  transform-origin: bottom;
+  transition: transform 0.25s ease-out;
+}
+main.slideshow nav a:hover:after {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+main.slideshow nav a:hover, main.slideshow nav a:active {
+  color: #ffcc00;
+}
+main.slideshow #logo img {
+  width: 400px;
+  height: 400px;
+}
+main.slideshow #pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main.slideshow #pattern img {
+  width: 100%;
+  height: 95vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer {
+  background-color: #3f3735;
+  height: 5vh;
+}
+footer p {
+  text-align: center;
+  font-size: 10px;
+  color: #ededed;
+}/*# sourceMappingURL=style.css.map */
