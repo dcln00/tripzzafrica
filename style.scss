@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'colors';
+@import 'mobile-menu';
 
 * {
     margin: 0;
@@ -10,8 +11,13 @@
     /* cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important; */
 }
 
+::selection {
+    background-color: $sec-color;
+    color: $text-color;
+}
+
 body, html {
-    overflow:hidden;
+    overflow-x:hidden;
 }
 
 a {
@@ -49,31 +55,19 @@ a:hover {
 
 main.slideshow {
     height: 95vh;
-    background:linear-gradient(0deg, rgba(154, 31, 103, 0.8), rgba(154, 31, 103, 0.8)), url(assets/pexels1.jpg);
+    background:linear-gradient(0deg, rgba(154, 31, 103, 0.8), rgba(154, 31, 103, 0.8)), url(assets/photo_2022.jpg);
     background-size:cover;
     background-position: center top;
     position:relative;
     overflow:hidden;
 
-    main.slideshow:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: blue;
-        opacity: 0.5;
-        z-index:10;
-    }
 
-    #has-subheader {
+    #subheader {
         position: relative;
         border-bottom:1px solid $text-color;
         padding: 12px 0;
         overflow-y:hidden;
-        display:block;
-
+ 
 
         .links {
 
@@ -176,3 +170,4 @@ footer {
     }
 }
 
+@import 'mobile';
