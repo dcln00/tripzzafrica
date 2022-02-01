@@ -352,7 +352,7 @@ footer .copyright a {
 }
 main.about-slide {
   height: 65vh !important;
-  background: linear-gradient(0deg, rgba(154, 31, 103, 0.8), rgba(154, 31, 103, 0.8)), url(assets/photo_2022_1.jpg);
+  background: linear-gradient(0deg, rgba(154, 31, 103, 0.8), rgba(154, 31, 103, 0.8)), url(assets/photo_2022_1.JPG);
   background-size: cover;
   background-position: center bottom;
   position: relative;
