@@ -187,6 +187,10 @@ body, html {
   overflow-x: hidden;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: #ededed;
@@ -215,7 +219,7 @@ a:hover {
 }
 
 main.slideshow {
-  height: 95vh;
+  height: 90vh;
   background: linear-gradient(0deg, rgba(154, 31, 103, 0.8), rgba(154, 31, 103, 0.8)), url(assets/photo_2022.jpg);
   background-size: cover;
   background-position: center center;
@@ -294,12 +298,22 @@ main.slideshow #pattern img {
 
 footer {
   background-color: #3f3735;
-  height: 5vh;
+  height: 10vh;
 }
 footer p {
   text-align: center;
   font-size: 10px;
   color: #ededed;
+}
+footer .copyright {
+  display: block;
+  font-size: 8px;
+  color: #757575;
+  text-align: center;
+  margin-top: 5px;
+}
+footer .copyright a {
+  color: #757575;
 }
 
 @media screen and (max-width: 576px) {
@@ -334,5 +348,144 @@ footer p {
 
   .hamburger {
     display: none;
+  }
+}
+main.about-slide {
+  height: 65vh !important;
+  background: linear-gradient(0deg, rgba(154, 31, 103, 0.8), rgba(154, 31, 103, 0.8)), url(assets/photo_2022_1.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section {
+  min-height: 390px;
+}
+.about-section h1 {
+  font-family: Tablon;
+  font-size: 100px;
+  color: #ffcc00;
+  text-align: center;
+}
+
+#about-paragraph {
+  background-color: #3f3735;
+}
+#about-paragraph p {
+  color: #ededed;
+  font-size: 11px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  max-width: 600px;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
+  main.about-slide, main.contact-slide {
+    height: 60vh !important;
+  }
+  main.about-slide #menu-logo, main.contact-slide #menu-logo {
+    position: relative;
+    z-index: 100;
+  }
+  main.about-slide #menu-logo img, main.contact-slide #menu-logo img {
+    position: fixed;
+    top: -18px;
+    left: 7px;
+    width: 120px;
+    height: auto;
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-section h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 576px) {
+  #menu-logo {
+    display: none;
+  }
+
+  .about-section h1 {
+    margin-top: 40px;
+  }
+}
+body {
+  background-color: #3f3735;
+}
+
+main.contact-slide {
+  height: 65vh !important;
+  background: linear-gradient(0deg, rgba(154, 31, 103, 0.8), rgba(154, 31, 103, 0.8)), url(assets/photo_2022_2.jpg);
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  overflow: hidden;
+}
+
+#contact-form {
+  background-color: #3f3735;
+  min-height: 500px;
+  margin-bottom: 30px;
+}
+#contact-form h2 {
+  display: block;
+  text-align: center;
+  font-family: tablon;
+  color: #ffcc00;
+  font-size: 45px;
+}
+#contact-form form label {
+  font-family: tablon;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+#contact-form form input {
+  border: none;
+  margin-bottom: 10px;
+  height: 50px;
+  padding: 20px;
+  width: 100%;
+  font-size: 10px;
+}
+#contact-form form textarea {
+  width: 100%;
+  padding: 20px;
+  font-size: 10px;
+}
+#contact-form form button {
+  background: none;
+  color: #ffcc00;
+  font-family: tablon;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+#contact-form form input:focus {
+  outline: none;
+}
+#contact-form form textarea:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 576px) {
+  #contact-form h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 576px) {
+  #contact-form {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

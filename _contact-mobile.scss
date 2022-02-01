@@ -1,0 +1,19 @@
+$breakpoint-mobile: 576px;
+
+@media screen and (max-width:$breakpoint-mobile) { 
+
+    #contact-form {
+        h2 {
+            font-size:20px;
+            margin-top:50px;
+        }
+    }
+
+}
+
+@media screen and (min-width:$breakpoint-mobile) {
+    #contact-form {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+} 
